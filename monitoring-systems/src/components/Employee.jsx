@@ -337,15 +337,15 @@ const Employee = () => {
 
                 {/* Action Buttons */}
                 <div className="flex space-x-2 mt-4 pt-4 border-t border-[var(--color-border)]">
-                  <Button size="sm" variant="outline" className="flex-1 border-[var(--color-primary)]/30 text-[var(--color-primary)] hover:bg-[var(--color-primary)]/20">
+                  <Button size="sm" variant="outline" className="flex-1 border-[var(--color-primary)]/30 text-[var(--color-primary)] hover:bg-[#0e1048] hover:text-white">
                     <Eye className="h-3 w-3 mr-1" />
                     View
                   </Button>
-                  <Button size="sm" variant="outline" className="flex-1 border-[var(--color-secondary)]/30 text-[var(--color-secondary)] hover:bg-[var(--color-secondary)]/20">
+                  <Button size="sm" variant="outline" className="flex-1 border-[var(--color-secondary)]/30 text-[var(--color-secondary)] hover:bg-[#0e1048] hover:text-white">
                     <Edit className="h-3 w-3 mr-1" />
                     Edit
                   </Button>
-                  <Button size="sm" variant="outline" className="border-[var(--color-destructive)]/30 text-[var(--color-destructive)] hover:bg-[var(--color-destructive)]/20">
+                  <Button size="sm" variant="outline" className="border-[var(--color-destructive)]/30 text-[var(--color-destructive)] hover:bg-[#0e1048] hover:text-white">
                     <Trash2 className="h-3 w-3" />
                   </Button>
                 </div>

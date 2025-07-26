@@ -166,7 +166,7 @@ function ExpensesReceipts() {
                   <div className="flex items-center justify-between">
                     <div>
                       <p className="text-sm text-[var(--color-foreground)]/70">{stat.title}</p>
-                      <p className="text-2xl font-bold text-[var(--color-foreground)]">${stat.amount.toFixed(2)}</p>
+                      <p className="text-2xl font-bold text-[var(--color-foreground)]">₱{stat.amount.toFixed(2)}</p>
                     </div>
                     <div className={`p-3 rounded-lg bg-gradient-to-r ${stat.color}`}>
                       <Icon className="h-6 w-6 text-white" />
@@ -283,7 +283,7 @@ function ExpensesReceipts() {
                           </span>
                         </td>
                         <td className="py-3 px-4 text-[var(--color-foreground)]/70">{expense.date}</td>
-                        <td className="py-3 px-4 text-[var(--color-primary)] font-semibold">${expense.amount.toFixed(2)}</td>
+                        <td className="py-3 px-4 text-[var(--color-primary)] font-semibold">₱{expense.amount.toFixed(2)}</td>
                         <td className="py-3 px-4">
                           <span className={`px-2 py-1 rounded-full text-xs border ${getStatusColor(expense.status)}`}>
                             {expense.status}
@@ -291,13 +291,13 @@ function ExpensesReceipts() {
                         </td>
                         <td className="py-3 px-4">
                           <div className="flex space-x-2">
-                            <Button size="sm" variant="ghost" className="text-[var(--color-primary)] hover:bg-[var(--color-primary)]/20">
+                            <Button size="sm" variant="ghost" className="text-[var(--color-primary)] hover:bg-[#0e1048] hover:text-white">
                               <Eye className="h-4 w-4" />
                             </Button>
-                            <Button size="sm" variant="ghost" className="text-[var(--color-secondary)] hover:bg-[var(--color-secondary)]/20">
+                            <Button size="sm" variant="ghost" className="text-[var(--color-secondary)] hover:bg-[#0e1048] hover:text-white">
                               <Edit className="h-4 w-4" />
                             </Button>
-                            <Button size="sm" variant="ghost" className="text-[var(--color-destructive)] hover:bg-[var(--color-destructive)]/20">
+                            <Button size="sm" variant="ghost" className="text-[var(--color-destructive)] hover:bg-[#0e1048] hover:text-white">
                               <Trash2 className="h-4 w-4" />
                             </Button>
                           </div>

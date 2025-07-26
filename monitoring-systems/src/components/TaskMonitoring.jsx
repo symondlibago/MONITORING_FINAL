@@ -286,13 +286,13 @@ function TaskMonitoring() {
                 )}
               </div>
               <div className="flex space-x-2">
-                <Button size="sm" variant="ghost" className="text-[var(--color-primary)] hover:bg-[var(--color-primary)]/20">
+                <Button size="sm" variant="ghost" className="text-[var(--color-primary)] hover:bg-[#0e1048] hover:text-white">
                   <Eye className="h-4 w-4" />
                 </Button>
-                <Button size="sm" variant="ghost" className="text-[var(--color-secondary)] hover:bg-[var(--color-secondary)]/20">
+                <Button size="sm" variant="ghost" className="text-[var(--color-secondary)] hover:bg-[#0e1048] hover:text-white">
                   <Edit className="h-4 w-4" />
                 </Button>
-                <Button size="sm" variant="ghost" className="text-[var(--color-destructive)] hover:bg-[var(--color-destructive)]/20">
+                <Button size="sm" variant="ghost" className="text-[var(--color-destructive)] hover:bg-[#0e1048] hover:text-white">
                   <Trash2 className="h-4 w-4" />
                 </Button>
               </div>

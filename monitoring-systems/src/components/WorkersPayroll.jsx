@@ -252,7 +252,7 @@ function WorkersPayroll() {
                 </div>
                 <div className="text-sm">
                   <span className="text-[var(--color-foreground)]/70">Hourly Rate:</span>
-                  <p className="text-[var(--color-foreground)]">${record.hourlyRate}/hr</p>
+                  <p className="text-[var(--color-foreground)]">₱{record.hourlyRate}/hr</p>
                 </div>
               </div>
               <div className="space-y-2">
@@ -266,7 +266,7 @@ function WorkersPayroll() {
                 </div>
                 <div className="text-sm">
                   <span className="text-[var(--color-foreground)]/70">Overtime Rate:</span>
-                  <p className="text-[var(--color-foreground)]">${record.overtimeRate}/hr</p>
+                  <p className="text-[var(--color-foreground)]">₱{record.overtimeRate}/hr</p>
                 </div>
               </div>
             </div>
@@ -275,15 +275,15 @@ function WorkersPayroll() {
               <div className="grid grid-cols-3 gap-4 text-center">
                 <div>
                   <p className="text-xs text-[var(--color-foreground)]/70 mb-1">Gross Pay</p>
-                  <p className="text-lg font-semibold text-[var(--color-primary)]">${record.grossPay.toFixed(2)}</p>
+                  <p className="text-lg font-semibold text-[var(--color-primary)]">₱{record.grossPay.toFixed(2)}</p>
                 </div>
                 <div>
                   <p className="text-xs text-[var(--color-foreground)]/70 mb-1">Deductions</p>
-                  <p className="text-lg font-semibold text-[var(--color-destructive)]">-${totalDeductions.toFixed(2)}</p>
+                  <p className="text-lg font-semibold text-[var(--color-destructive)]">-₱{totalDeductions.toFixed(2)}</p>
                 </div>
                 <div>
                   <p className="text-xs text-[var(--color-foreground)]/70 mb-1">Net Pay</p>
-                  <p className="text-lg font-semibold text-[var(--color-primary)]">${record.netPay.toFixed(2)}</p>
+                  <p className="text-lg font-semibold text-[var(--color-primary)]">₱{record.netPay.toFixed(2)}</p>
                 </div>
               </div>
             </div>
@@ -293,15 +293,15 @@ function WorkersPayroll() {
               <div className="grid grid-cols-3 gap-2 text-xs">
                 <div className="bg-white rounded p-2 text-center border border-[var(--color-border)] shadow-sm">
                   <p className="text-[var(--color-foreground)]/70">Tax</p>
-                  <p className="text-[var(--color-destructive)]">${record.deductions.tax.toFixed(2)}</p>
+                  <p className="text-[var(--color-destructive)]">₱{record.deductions.tax.toFixed(2)}</p>
                 </div>
                 <div className="bg-white rounded p-2 text-center border border-[var(--color-border)] shadow-sm">
                   <p className="text-[var(--color-foreground)]/70">Insurance</p>
-                  <p className="text-[var(--color-destructive)]">${record.deductions.insurance.toFixed(2)}</p>
+                  <p className="text-[var(--color-destructive)]">₱{record.deductions.insurance.toFixed(2)}</p>
                 </div>
                 <div className="bg-white rounded p-2 text-center border border-[var(--color-border)] shadow-sm">
                   <p className="text-[var(--color-foreground)]/70">Retirement</p>
-                  <p className="text-[var(--color-destructive)]">${record.deductions.retirement.toFixed(2)}</p>
+                  <p className="text-[var(--color-destructive)]">₱{record.deductions.retirement.toFixed(2)}</p>
                 </div>
               </div>
             </div>
@@ -311,13 +311,13 @@ function WorkersPayroll() {
                 <span>Total Hours: {record.hoursWorked + record.overtimeHours}</span>
               </div>
               <div className="flex space-x-2">
-                <Button size="sm" variant="ghost" className="text-[var(--color-primary)] hover:bg-[var(--color-primary)]/20">
+                <Button size="sm" variant="ghost" className="text-[var(--color-primary)] hover:bg-[#0e1048] hover:text-white">
                   <Eye className="h-4 w-4" />
                 </Button>
-                <Button size="sm" variant="ghost" className="text-[var(--color-secondary)] hover:bg-[var(--color-secondary)]/20">
+                <Button size="sm" variant="ghost" className="text-[var(--color-secondary)] hover:bg-[#0e1048] hover:text-white">
                   <Edit className="h-4 w-4" />
                 </Button>
-                <Button size="sm" variant="ghost" className="text-[var(--color-primary)] hover:bg-[var(--color-primary)]/20">
+                <Button size="sm" variant="ghost" className="text-[var(--color-primary)] hover:bg-[#0e1048] hover:text-white">
                   <Download className="h-4 w-4" />
                 </Button>
               </div>
@@ -380,7 +380,7 @@ function WorkersPayroll() {
                     <div>
                       <p className="text-sm text-[var(--color-foreground)]/70">{stat.title}</p>
                       <p className="text-2xl font-bold text-[var(--color-foreground)]">
-                        {stat.isHours ? `${stat.amount}h` : `$${stat.amount.toFixed(2)}`}
+                        {stat.isHours ? `${stat.amount}h` : `₱${stat.amount.toFixed(2)}`}
                       </p>
                     </div>
                     <div className={`p-3 rounded-lg bg-gradient-to-r ${stat.color}`}>
