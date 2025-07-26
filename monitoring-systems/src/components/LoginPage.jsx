@@ -4,6 +4,8 @@ import { Eye, EyeOff, Lock, User, ArrowRight } from 'lucide-react'
 import { Button } from '@/components/ui/button.jsx'
 import { Input } from '@/components/ui/input.jsx'
 import { Card, CardContent } from '@/components/ui/card.jsx'
+import logo from '../assets/ba-logo.jpg'; // or relative path like '../../assets/ba-logo.jpg'
+
 
 const LoginPage = ({ onLogin }) => {
   const [username, setUsername] = useState('')
@@ -49,9 +51,8 @@ const LoginPage = ({ onLogin }) => {
               className="text-center mb-8"
             >
               <div className="mb-6">
-                <img 
-                  src="/ba-logo.jpg" 
-                  alt="BA Logo" 
+              <img src={logo} alt="BA Logo"
+
                   className="w-32 h-32 mx-auto rounded-full shadow-lg border-4 border-[var(--color-border)]"
                 />
               </div>
