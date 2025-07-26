@@ -50,7 +50,7 @@ const LoginPage = ({ onLogin }) => {
             >
               <div className="mb-6">
                 <img 
-                  src="/ba-logo-new.jpg" 
+                  src="/ba-logo.jpg" 
                   alt="BA Logo" 
                   className="w-32 h-32 mx-auto rounded-full shadow-lg border-4 border-[var(--color-border)]"
                 />
